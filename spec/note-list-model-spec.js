@@ -11,7 +11,7 @@ testReturnAllTheNotes()
 function testCreatesAndStoresANewSingleNote() {
     var noteList = new NoteList
     noteList.createNote('Favourite place: jungle.')
-    assert.isTrue( noteList.list[0] === ('Favourite place: jungle.'))
+    assert.isTrue( noteList.list[0].text === ('Favourite place: jungle.'))
     console.log("testCreatesAndStoresANewSingleNote is passing");
 };
 testCreatesAndStoresANewSingleNote()

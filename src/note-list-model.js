@@ -11,7 +11,8 @@
         };
      };
 
-    NoteList.prototype.createNote = function(note) {
+    NoteList.prototype.createNote = function(text) {
+        var note = new Note(text)
         return this.list.push(note);
     };
     
