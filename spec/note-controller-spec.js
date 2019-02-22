@@ -3,7 +3,7 @@
 function testControllerCanBeInstantiated() {
 let controller = new Controller;
 assert.isTrue(controller != undefined);
-console.log('testControllerCanBeInstantiated')
+console.log('testControllerCanBeInstantiated passed')
 
 }; 
 testControllerCanBeInstantiated()
@@ -22,6 +22,6 @@ function testGetHtml() {
     }
 
 assert.isTrue(noteController.GetHtml(noteList) === '<ul><div><li>Favourite food: pesto</li></div></ul>')
-
+console.log('test testGetHtml passed')
 };
 testGetHtml()

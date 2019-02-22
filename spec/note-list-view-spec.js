@@ -7,6 +7,6 @@ function testReturnAStringOfHtml() {
     list.createNote('Favourite drink: seltzer')
     var noteListView = new NoteListView(list.listAll());
     assert.isTrue(noteListView.returnHtmlString() === '<ul><div><li>Favourite food: pesto</li></div><div><li>Favourite drink: seltzer</li></div></ul>')
-    console.log("testReturnAStringOfHtml is passing")
+    console.log("testReturnAStringOfHtml passed")
 };
 testReturnAStringOfHtml()
